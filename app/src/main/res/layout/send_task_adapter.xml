@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="110dp"
+    android:padding="6dip">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="121dp"
+        android:layout_height="99dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@color/blue_jeans"
+        android:clickable="true"
+        android:focusable="false"
+        android:onClick="checkBoxClicked"
+        android:text="complete"
+        android:textColor="@color/honeydew" />
+
+    <LinearLayout
+        android:id="@+id/TextLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/checkBox"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/send_taskTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@color/blue_jeans"
+            android:gravity="center"
+            android:textColor="@color/honeydew"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/send_taskDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@color/blue_jeans"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:singleLine="true"
+            android:textColor="@color/honeydew"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/send_Number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@color/blue_jeans"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:singleLine="true"
+            android:textColor="@color/honeydew"
+            android:textSize="24sp" />
+    </LinearLayout>
+</RelativeLayout>
